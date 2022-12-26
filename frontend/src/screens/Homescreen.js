@@ -20,7 +20,7 @@ const reducer = (state, action) => {
 };
 
 function HomeScreen() {
-  const [{ loading, error, products }, dispatch] = useReducer(reducer, {
+  const [{ products }, dispatch] = useReducer(reducer, {
     products: [],
     loading: true,
     error: '',
