@@ -36,11 +36,11 @@
         'ADGMOT35CHFLVDHBJNIG50K96BCGEFS4PM141I5KAA9A4PGTMEUG'
       );
       smartech('register', '2ba4142301950c648fd3df58cc8d0b42');
-      smartech('identify', 'EMAIL');
+      smartech('identify', '');
     </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -52,5 +52,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      smartech(
+        'contact',
+        'LIST IDENTIFIER',
+        {
+          'pk^customerid': { _id },
+          email: { EMAIL },
+          FIRST_NAME: { NAME },
+        },
+        function () {
+          smartech('identify', { EMAIL });
+          smartech('dispatch', 'Register', {
+            email: { EMAIL },
+            FIRST_NAME: { NAME },
+          });
+        }
+      );
+    </script>
   </body>
 </html>
