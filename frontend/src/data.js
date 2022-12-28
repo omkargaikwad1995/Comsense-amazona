@@ -48,6 +48,19 @@ const data = {
       numReviews: 10,
       description: 'high quality product',
     },
+    {
+      // _id: '5',
+      name: 'Gucci-Shirt',
+      slug: 'Gucci-fit shirt',
+      category: 'Shirt',
+      image: '/images/p5.jpg',
+      price: 165,
+      countInStock: 15,
+      brand: 'Gucci',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'Very high quality product',
+    },
   ],
 };
 export default data;
