@@ -45,6 +45,21 @@ export default function PlaceOrderScreen() {
     try {
       dispatch({ type: 'CREATE_REQUEST' });
 
+      // <script>
+      // smartech('dispatch', 'Add To Cart', {
+      //   "purl": "<Replace purl value here>",
+      //   "prid": "<Replace prid value here>",
+      //   "name": "<Replace name value here>",
+      //   "brand": "<Replace brand value here>",
+      //   "variant": "<Replace variant value here>",
+      //   "category": "<Replace category value here>",
+      //   "price": "<Replace price value here>",
+      //   "prqt": "<Replace prqt value here>",
+      //   "currency": "<Replace currency value here>"
+      //   });
+
+      // </script>
+
       const { data } = await Axios.post(
         '/api/orders',
         {
