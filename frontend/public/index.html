@@ -52,23 +52,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
+    <!-- <script>
       smartech(
         'contact',
-        'LIST IDENTIFIER',
+        '3',
         {
-          'pk^customerid': { _id },
-          email: { EMAIL },
-          FIRST_NAME: { NAME },
+          'pk^email': 'admin@example.com',
+          FIRST_NAME: 'NAME',
         },
         function () {
-          smartech('identify', { EMAIL });
-          smartech('dispatch', 'Register', {
-            email: { EMAIL },
-            FIRST_NAME: { NAME },
-          });
+          smartech('identify', 'admin@exapmle.com');
+          // smartech('dispatch', 'Register', {
+          //   email: { EMAIL },
+          //   FIRST_NAME: { NAME },
+          // });
         }
       );
-    </script>
+    </script> -->
   </body>
 </html>
