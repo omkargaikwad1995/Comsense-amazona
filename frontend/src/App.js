@@ -110,7 +110,7 @@ function App() {
             </Container>
           </main>
           <footer>
-            <script>
+            {/* <script>
               smartech(
                 'contact',
                 '3',
@@ -126,7 +126,7 @@ function App() {
                   });
                 }
               );
-            </script>
+            </script> */}
             <div className="text-center">All Rights Reserved</div>
           </footer>
         </div>
