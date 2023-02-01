@@ -111,21 +111,15 @@ function App() {
           </main>
           <footer>
             {/* <script>
-              smartech(
-                'contact',
-                '3',
-                {
+              smartech('contact','3'{
                   'pk^email': 'admin@example.com',
                   name: 'Basir',
-                },
-                function () {
-                  smartech('identify', 'admin@exapmle.com');
-                  smartech('dispatch', 'Register', {
-                    'email':'admin@example.com',
-                    'name': 'Basir',
-                  });
-                }
-              );
+                });
+              smartech('identify', 'admin@exapmle.com');
+              smartech('dispatch', 'Register', {
+                'email':'admin@example.com',
+                'name': 'Basir',
+              });
             </script> */}
             <div className="text-center">All Rights Reserved</div>
           </footer>
